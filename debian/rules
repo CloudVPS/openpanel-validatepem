@@ -13,8 +13,8 @@
 BUILD_ROOT=$(CURDIR)/debian/tmp
 install:
 	rm -rf ${BUILD_ROOT}
-	mkdir -p ${BUILD_ROOT}/var/openpanel/tools
-	install -m 755 validatepem.py ${BUILD_ROOT}/var/openpanel/tools/validatepem.py
+	mkdir -p ${BUILD_ROOT}/var/openpanel/bin
+	install -m 755 validatepem.py ${BUILD_ROOT}/var/openpanel/bin/validatepem.py
 
 build:
 
