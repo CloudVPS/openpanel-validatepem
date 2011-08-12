@@ -1,0 +1,13 @@
+Source: openpanel-validatepem
+Section: misc
+Priority: optional
+Maintainer: OpenPanel packager <packages@openpanel.com>
+Build-Depends: debhelper (>= 5), openpanel-dev
+Standards-Version: 3.7.2
+
+Package: openpanel-validatepem
+Architecture: any
+Depends: openssl, python (>= 2.4)
+Description: Small tool to check pem-files uploaded through Openpanel
+ This script checks if a uploaded pem-file is usable for OpenPanel-services.
+ Only packaged so multiple Openpanel modules can depend on it.
