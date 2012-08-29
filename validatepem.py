@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import sys, subprocess, os
+import sys, subprocess, os, re
 
 certs=[]
 keys=[]
