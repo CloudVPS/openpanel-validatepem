@@ -26,7 +26,9 @@ def verifykey(key):
 def tryverify(pem):
     if pem and pem[0] == "-----BEGIN CERTIFICATE-----":
         verifycert(cur)
-    if pem and re.match('-----BEGIN (RSA )?PRIVATE KEY-----', pem[0]):
+    if pem and pem[0] == '-----BEGIN RSA PRIVATE KEY-----':
+    	verifycert(cur)
+    if pem and pem[0] == '-----BEGIN PRIVATE KEY-----':
         verifykey(cur)
 
 if len(sys.argv) >= 1:
